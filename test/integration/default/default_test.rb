@@ -10,6 +10,6 @@ describe port(80) do
 end
 
 describe command('curl http://localhost') do
-  its(:stdout)  { should match(/SUCCESS/) }
+  its(:stdout)  { should match(/My WebPage/) }
 end
 
